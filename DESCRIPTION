@@ -1,0 +1,9 @@
+Title: Nepal Covid19 Vaccine Tracker 
+Description: A twitter bot to track covid19 vaccine status of Nepal
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  dplyr,
+  readr,
+  rtweet

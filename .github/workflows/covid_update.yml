@@ -1,0 +1,33 @@
+name: covid_update
+
+on:
+  #push:
+   # branches:
+    # - main
+
+  schedule:
+
+    # auto run after every 5:15 PM (Nepal time) every day
+    - cron:  '15 11 * * *'
+
+
+jobs:
+  build:
+    name: covid19_vaccine_tracker_nepal
+    runs-on: ubuntu-20.04
+    env:
+      APPNAME: ${{ secrets.APPNAME }}
+      KEY: ${{ secrets.KEY }}
+      SECRET: ${{ secrets.SECRET }}
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}  
+
+
+    container:
+     image: bjungbogati/vaccinenepal:latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create and post tweet
+        run: Rscript covid_update.R
