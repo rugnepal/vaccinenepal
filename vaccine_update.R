@@ -27,7 +27,7 @@ post_tweet(
   paste0(
     "Fully Vaccinated: ", full$total_per, " %", "\t \t \t [", full$target_per, "%]*", 
     "\n", full$bar, "\n \n",
-    "First Dose: ", first$total_per, " %", "\t \t \t [", first$target_per, "%)*", 
+    "First Dose: ", first$total_per, " %", "\t \t \t [", first$target_per, "%]*", 
     "\n", first$bar, "\n \n",
     "Last Updated: ", format(Sys.Date(), "%b %d, %Y"), "\n \n",
     "Note: [%]* - Target (Eligible) Population (2,17,56,763)"
