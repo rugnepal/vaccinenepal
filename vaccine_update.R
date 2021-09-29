@@ -25,9 +25,9 @@ twitter_token <- create_token(
 
 post_tweet(
   paste0(
-    "Fully Vaccinated: ", full$total_per, " %", "\t \t \t [", full$target_per, "%]*", 
+    "Fully Vaccinated: ", full$total_per, "%", "\t \t \t [", full$target_per, "%]*", 
     "\n", full$bar, "\n \n",
-    "First Dose: ", first$total_per, " %", "\t \t \t [", first$target_per, "%]*", 
+    "First Dose: ", first$total_per, "%", "\t \t \t [", first$target_per, "%]*", 
     "\n", first$bar, "\n \n",
     "Note: [%]* is out of Eligible Population"
   )
