@@ -30,7 +30,7 @@ post_tweet(
     "First Dose: ", first$total_per, " %", "\t \t \t [", first$target_per, "%]*", 
     "\n", first$bar, "\n \n",
     "Last Updated: ", format(Sys.Date(), "%b %d, %Y"), "\n \n",
-    "Note: [%]* - Target (Eligible) Population (2,17,56,763)"
+    "Note: [%]* is out of Eligible Population"
   )
 )
 
