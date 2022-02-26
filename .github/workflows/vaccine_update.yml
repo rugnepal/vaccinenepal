@@ -5,10 +5,10 @@ on:
   #  branches:
    #  - main
 
-  schedule:
+  #schedule:
 
     # auto run after every 4:45 PM (Nepal time) every day
-    - cron:  '00 11 * * *'
+   # - cron:  '00 11 * * *'
 
 
 jobs:
